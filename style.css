@@ -1,32 +1,13 @@
-#countLabel{
-
+body{
+    font-family: Verdana;
+    text-align: center;
+}
+#myButton{
+    font-size: 3em;
+    padding:5px 25px;
+border-radius: 5px;
+}
+#myLabel{
+    font-size: 3em;
     
-    font-size: 10em;
-    font-family: Helvetica, sans-serif;
-
-}
-
-#container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh; /* full vertical height */
-}
-
-
-.buttons{
-    padding: 10px 20px;
-    font-size: 1.5em;
-    color: white;
-    background-color: hwb(210 0% 0%);
-
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.25s;
-
-}
-.buttons:hover{
-    background-color: hsl(210, 100%, 40%);
-
 }
