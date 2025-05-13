@@ -1,39 +1,25 @@
-const myText=document.getElementById("myText");
+const myCheckBox = document.getElementById("myCheckBox");
+const visaBtn = document.getElementById("visaBtn");
+const masterCardBtn = document.getElementById("masterCardBtn");
+const payPalBtn = document.getElementById("paypalBtn");
 const mySubmit = document.getElementById("mySubmit");
-const resultElement=document.getElementById("resultElement");
+const subResult = document.getElementById("subResult");
+const paymentResult = document.getElementById("paymentResult");
 
-let age=0;
+mySubmit.onclick = function () {
+    if (myCheckBox.checked) {
+        subResult.textContent = "You are subscribed to our newsletter!";
+    } else {
+        subResult.textContent = "You are not subscribed to our newsletter!";
+    }
 
-mySubmit.onclick=function(){
-    age=myText.value;
-    age=Number(age);
-
-
-    
-if (age>=100){
-     
-    resultElement.textContent='You are a centenarian!';
+    if (visaBtn.checked) {
+        paymentResult.textContent = "You have selected Visa as your payment method!";
+    } else if (masterCardBtn.checked) {
+        paymentResult.textContent = "You have selected MasterCard as your payment method!";
+    } else if (payPalBtn.checked) {
+        paymentResult.textContent = "You have selected PayPal as your payment method!";
+    } else {
+        paymentResult.textContent = "Please select a payment method!";
     }
-    else if (age>=50){
-        
-        resultElement.textContent='You are a senior citizen!'; 
-    }
-    else if (age>=18){
-        
-        resultElement.textContent='You are an adult!'; 
-    }
-    else if (age>=13){
-        resultElement.textContent='You are a teenager!';
-    }
-    else if (age>=0){
-        
-        resultElement.textContent='You are a child!'; 
-    }
-    else {
-          
-        resultElement.textContent='Invalid age!';
-    }
-    
-}
-
-
+};
