@@ -1,4 +1,19 @@
-let name=prompt("plz enter your name");
-let age=prompt("plz enter your age");
+let quarter=1;
 
-alert(`${name} is ${age} years old`)
+switch(quarter){
+    case 1:
+        console.log("January , Feburary , March");
+        break;
+    case 2:
+        console.log("April , May , June");
+        break;
+    case 3:
+        console.log("July , August , Septumber");
+        break;
+    case 4:
+        console.log("October , November , December");
+        break;
+    default:
+        console.log("Not aQuarter");
+        break;
+}
