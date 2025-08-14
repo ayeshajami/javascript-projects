@@ -1,7 +1,15 @@
-let str="apples";
+let a=5;
+let b=18;
+let c=13;
 
-if((str[0]=='a' || start[0]=='A')&& (str.length>5)){
-    console.log("golden string");
-}else{
-    console.log("not a golden string");
+if(a>c){
+    console.log(a, "is larger");
+}else {
+    console.log(c,"is larger");
+}else {
+    if(b>c){
+        console.log(b,"is larger");
+    }else{
+        console.log(c,"is larger");
+    }
 }
