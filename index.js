@@ -1,9 +1,4 @@
+let name=prompt("plz enter your name");
+let age=prompt("plz enter your age");
 
-let num = 20;
-
-if(num % 10 ==0){
-    console.log("good");
-}
-else{
-    console.log("Bad");
-} 
+alert(`${name} is ${age} years old`)
