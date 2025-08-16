@@ -1,8 +1,12 @@
-let num1=32;
-let num2=47852;
+const favMovie="avatar";
+let guess=prompt("guess the movie ");
+while ((guess !=favMovie)&&(guessn !="quit")){
+    console.log("wrong guess");
+    guess=prompt("Wrong guess please try again");
 
-if((num1%10)==(num2%10)){
-    console.log("numbers have same last digit which is",num1%10);
-}else{
-    console.log("number don't have same last digit");
+}
+if(guess==favMovie){
+    console.log("Congratulations!");
+}ekse{
+    console.log("you quit");
 }
