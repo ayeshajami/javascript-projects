@@ -1,6 +1,8 @@
-const car ={
-    name: "Maruti suzuki",
-    model:"Maruti suzuki Dzire",
-    colour:"white",
+const Person = {
+name: "Jane Doe",
+age:30,
+city: "New York",
 };
-console.log("Car Details:");
+Person.city="New York";
+personalbar.country="USA";
+console.log(person);
