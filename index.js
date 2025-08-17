@@ -1,2 +1,6 @@
-let dice = Math.floor(Math.random()* 6)+1;
-console.log(dice);
+const car ={
+    name: "Maruti suzuki",
+    model:"Maruti suzuki Dzire",
+    colour:"white",
+};
+console.log("Car Details:");
