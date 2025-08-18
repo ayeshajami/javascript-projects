@@ -24,3 +24,12 @@ function printName(name){
 
  sum(1,3);
 sum(4,5);
+
+
+function avg(a,b,c){ 
+
+    let avg=(a+b+c)/3;
+    console.log(avg);
+
+}
+avg(5,6,7);
