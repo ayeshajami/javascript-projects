@@ -1,6 +1,6 @@
-function printpoem(){
-    console.log("Twinkle twinkle little star");
-    console.log("How i wonder what you are");
-}
 
-printpoem();
+function rollDice(){
+let rand=Math.floor(Math.random()*6)+1;
+console.log("rand");
+}
+rollDice();
