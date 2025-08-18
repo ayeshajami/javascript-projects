@@ -1,6 +1,8 @@
-function printTable(n){
-for(let i=n; i<=n*10; i+=10){
-    console.log(i);
+function sum(n){
+    let sum=0;
+    for(let i=1;i<=n;i++){
+        sum+=i;
+    }
+return sum;
 }
-
-printTable(5);
+getSum(10);
