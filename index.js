@@ -1,8 +1,6 @@
-const Person = {
-name: "Jane Doe",
-age:30,
-city: "New York",
-};
-Person.city="New York";
-personalbar.country="USA";
-console.log(person);
+function printpoem(){
+    console.log("Twinkle twinkle little star");
+    console.log("How i wonder what you are");
+}
+
+printpoem();
