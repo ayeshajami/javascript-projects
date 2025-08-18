@@ -16,3 +16,11 @@ function printName(name){
 }
  printInfo("Aisha");
   printInfo(21);
+
+
+ function sum(a,b){
+    console.log(a+b);
+ }
+
+ sum(1,3);
+sum(4,5);
