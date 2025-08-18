@@ -9,3 +9,10 @@ function printName(name){
     console.log(name);
 }
  printName("Aisha");
+
+ function printInfo(name,age){
+    console.log(name);
+    console.log(age);
+}
+ printInfo("Aisha");
+  printInfo(21);
