@@ -1,8 +1,9 @@
-function sum(n){
-    let sum=0;
-    for(let i=1;i<=n;i++){
-        sum+=i;
+let str =["hi","hello","by","!"]
+funstion Content(str){
+    let result;
+
+    for(let i=0;i<str.lenght;i++){
+        result += str[i];
     }
-return sum;
+    return result;
 }
-getSum(10);
