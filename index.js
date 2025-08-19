@@ -10,3 +10,6 @@ setTimeout(()=>{
 },4000);
 console.log("Welcome");
 
+setInterval(()=>{
+console.log("Hello");
+}2000);
