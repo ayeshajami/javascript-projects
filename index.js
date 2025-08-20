@@ -1,12 +1,16 @@
-let btn=document.querySelector("button");
-console.dir(btn);
-// btn.onclick = function(){
-//   console.log("Button clicked!");
-//   alert("button clicked!");
-// }
+let btns=document.querySelectorAll("button");
 
+
+ for (btn of btns){
+btn.onclick = sayHellow;
+  btn.onmouseenter = function ()
+  {
+    console.log("you entered a button");
+  }
+  console.dir(btn);
+ }
 function sayHellow(){
-  alert("Hellow!");
+  alert("Hello!");
 }
 
-btn.onlick=sayHellow;
+
