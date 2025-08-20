@@ -1,16 +1,23 @@
-let btns=document.querySelectorAll("button");
+let btn=document.querySelector("button");
+
+btn.addEventListener("click",function(){
+  let h3=document.querySelector("h3");
+  let randomColor=getRandomColor();
+  h3.innerText = randomColor;
+
+  let div=document.querySelector("div");
+  div.style.backgroundColor=randomColor;
 
 
- for (btn of btns){
-btn.onclick = sayHellow;
-  btn.onmouseenter = function ()
-  {
-    console.log("you entered a button");
-  }
-  console.dir(btn);
- }
-function sayHellow(){
-  alert("Hello!");
+  console.log("color updated");
+})
+
+function getRandomColor(){
+  let red=Math.floor(Math.random()*225);
+  let green=Math.floor(Math.random()*225);
+  let blue=Math.floor(Math.random()*225);
+  
+  let color = `rgb(${red}, ${green}, ${blue})`;
+
+  return color;
 }
-
-
