@@ -6,7 +6,15 @@ let inp = document.querySelector("input");
 
 inp.addEventListener("keyup", function () {
   console.log("key=",event.key);
-console.log("key=",event.code);
-  console.log("key was realeased");
+
+  if(event.key =="Arrowup"){
+  console.log("character moves forward");
+  else if(event.key =="ArrowDown"){
+  console.log("character moves backward");
+  else if(event.key =="ArrowLeft"){
+  console.log("character moves left");
+  else if(event.key =="ArrowRight"){
+  console.log("character moves right");
+}
 });
 
