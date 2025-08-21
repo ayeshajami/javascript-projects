@@ -1,9 +1,16 @@
-let form=document.querySelector("form");
+let btn = document.querySelector("button");
+let ul = document.querySelector("ul");
+let inp = document.querySelector("input");
 
-form.addEventListener("submit",function(event){
-  event.preventDefault();
- 
-  let inp=document.querySelector("input");
-  console.dir(inp);
-  console.log(inp.value);
+btn.addEventListener("click", function() {
+  let item = document.createElement("li"); 
+  item.innerText = inp.value;
+
+  let delBtn=document.createElement("button");
+delBtn.innerText="delete";
+delBtn.classList.add("delete");
+
+item.appendChild(delBtn);
+  ul.appendChild(item);
+  inp.value = "";
 });
