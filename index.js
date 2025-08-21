@@ -9,10 +9,16 @@ inp.addEventListener("keyup", function () {
 
   if(event.key =="Arrowup"){
   console.log("character moves forward");
+  }
   else if(event.key =="ArrowDown"){
-  console.log("character moves backward");
+console.log("character moves backward");
+  }
+  
   else if(event.key =="ArrowLeft"){
-  console.log("character moves left");
+    console.log("character moves left");
+  }
+ 
+  
   else if(event.key =="ArrowRight"){
   console.log("character moves right");
 }
