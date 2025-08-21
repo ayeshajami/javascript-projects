@@ -1,6 +1,5 @@
-let btn=document.querySelector("button");
+let inp = document.querySelector("input");
 
-btn.addEventListener("click",function(){
-  console.log(this);
-  this.style.background="blue";
+inp.addEventListener("keydown", function () {
+  console.log("key was pressed");
 });
