@@ -18,16 +18,15 @@ function btnFlash(btn){
     btn.classList.add("flash");
     setTimeout(function(){
         btn.classList.remove("flash");
-    },1000);
+    },250);
 }
-function levelup(){
+function levelup() {
     level++;
     h2.innerText = `Level ${level}`;
 
-
-    let randIdx=Math.floor(Math.random()*3);
-    let randColor=btns[randIdx];
-    let randBtn=document.querySelector(`. ${randColor}`);
+    let randIdx = Math.floor(Math.random() * 4);
+    let randColor = btns[randIdx];
+    let randBtn = document.querySelector(`.${randColor}`);
     console.log(randBtn);
-    btnFlash();
+    btnFlash(randBtn);
 }
