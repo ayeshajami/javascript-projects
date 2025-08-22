@@ -27,6 +27,19 @@ function levelup() {
     let randIdx = Math.floor(Math.random() * 4);
     let randColor = btns[randIdx];
     let randBtn = document.querySelector(`.${randColor}`);
+    console.log(randIdx);
+    console.log(randColor);
     console.log(randBtn);
     btnFlash(randBtn);
+}
+
+function btnPress(){
+    let btn = this;
+    btnFlash(btn);
+}
+
+let allBtns=document.querySelectorAll(".btn");
+for(btn of allBtns){
+    btn.addEventListener("click",btnPress);
+
 }
