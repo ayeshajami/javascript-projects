@@ -1,5 +1,6 @@
 let gameSeq=[];
 let userSeq=[];
+
 let btns=["yellow","red","green","purple"];
 let started=false;
 let level=0;
@@ -14,10 +15,16 @@ if(started== false){
     levelup();
 }
 });
-function btnFlash(btn){
+function gameFlash(btn){
     btn.classList.add("flash");
     setTimeout(function(){
         btn.classList.remove("flash");
+    },250);
+}
+function userFlash(btn){
+    btn.classList.add("userflash");
+    setTimeout(function(){
+        btn.classList.remove("userflash");
     },250);
 }
 function levelup() {
@@ -30,12 +37,13 @@ function levelup() {
     console.log(randIdx);
     console.log(randColor);
     console.log(randBtn);
-    btnFlash(randBtn);
+    gameFlash(randBtn);
 }
 
 function btnPress(){
+    console.log(this);
     let btn = this;
-    btnFlash(btn);
+    userFlash(btn);
 }
 
 let allBtns=document.querySelectorAll(".btn");
