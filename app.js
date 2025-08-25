@@ -4,10 +4,17 @@ function savetoDb(data){
   return new Promise((success,failure)=>{
   let internetSpeed=Math.floor(Math.random()*10)+1;
   if (internetSpeed>4){
-    success("data was saved");
+    resolve("data was saved");
   }else{
-    failure("data was not saved");
+    reject("data was not saved");
   }
   });
 }
-savetoDb("Apna college");
+
+let request =savetoDb("Apna college");
+request.then(()=>{
+    console.log("promise was resolved");
+})
+.catch(()=>{
+    console.log("promise was rejected");
+});
