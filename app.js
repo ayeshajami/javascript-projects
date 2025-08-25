@@ -1,10 +1,4 @@
-function one (){
-    return 1;
-}
-function two(){
-    return one()+one();
-}
-function three(){
-    let ans= two()+one();
-    console.log(ans);
-}
+setTimeout(function() {
+    console.log)("Hello,World!");
+ },200);
+ console.log("Hello...");
