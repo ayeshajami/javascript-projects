@@ -10,21 +10,35 @@
 // // }
 // // changeColor("red",1000,()=>{
 // //     changeColor("orange",1000,()=>{
-// //      changeColor("green",1000);
-// //     });
-// // });
+// // //      changeColor("green",1000);
+// // //     });
+// // // });
 
-function savetoDb(data,success,failer){
-    let internetSpeed=Math.floor(Math.random()*10)+1;
-    if(internetSpeed>4){
-        success();
-    }else{
-        failer();
-    }
+// function savetoDb(data,success,failer){
+//     let internetSpeed=Math.floor(Math.random()*10)+1;
+//     if(internetSpeed>4){
+//         success();
+//     }else{
+//         failer();
+//     }
+// }
+// savetoDb("apna college",()=>{
+//     console.log("your data was saved");
+//     savetoDb("aisha",()=>{
+//         console.log("save");
+//     })
+// })
+
+
+function savetoDb(data){
+    
+  return new Promise((success,failure)=>{
+  let internetSpeed=Math.floor(Math.random()*10)+1;
+  if (internetSpeed>4){
+    success("data was saved");
+  }else{
+    failure("data was not saved");
+  }
+  });
 }
-savetoDb("apna college",()=>{
-    console.log("your data was saved");
-    savetoDb("aisha",()=>{
-        console.log("save");
-    })
-})
+savetoDb("Apna college");
