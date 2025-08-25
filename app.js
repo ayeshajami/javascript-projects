@@ -11,8 +11,8 @@ function savetoDb(data){
   });
 }
 
-let request =savetoDb("Apna college");
-request.then(()=>{
+savetoDb("Apna college")
+.then(()=>{
     console.log("promise was resolved");
 })
 .catch(()=>{
