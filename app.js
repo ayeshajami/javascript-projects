@@ -1,20 +1,14 @@
-
-function savetoDb(data){
-    
-  return new Promise((success,failure)=>{
-  let internetSpeed=Math.floor(Math.random()*10)+1;
-  if (internetSpeed>4){
-    resolve("data was saved");
-  }else{
-    reject("data was not saved");
-  }
-  });
+function getNum(){
+  return new Promise((resolve,reject)=>{
+   setTimeout(()=>{
+     let num=Math.floor(Math.random()*10)+1;
+    console.log(num);
+    resolve();
+   },1000);
+   });
 }
-
-savetoDb("Apna college")
-.then(()=>{
-    console.log("promise was resolved");
-})
-.catch(()=>{
-    console.log("promise was rejected");
-});
+async function demo(params) {
+  getNum();
+  getNum();
+  getNum();
+}
