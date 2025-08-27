@@ -7,8 +7,8 @@ function getNum(){
    },1000);
    });
 }
-async function demo(params) {
-  getNum();
-  getNum();
+async function demo() {
+await  getNum();
+await  getNum();
   getNum();
 }
