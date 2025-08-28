@@ -1,21 +1,12 @@
-let btn = document.querySelector("button");
-btn.addEventListener("click", async () => {
-  let fact = await getfacts();   
-  console.log(fact);
-let p = document.getElementById("results");
+const url="https://icanhazdadjoke.com/";
 
-  p.innerText=fact;
-});
+async function name() {
+  try{
+    let res=await axios.get(url);
+    console.log(res);
+  }catch(err){
+    console.log(err);
 
-let url = "https://catfact.ninja/fact";
-
-
-async function getfacts() {
-  try {
-    let res = await axios.get(url);
-    return res.data.fact;  
-  } catch (e) {
-    console.log("Error - ", e);
-    return "no fact found";
   }
+  
 }
