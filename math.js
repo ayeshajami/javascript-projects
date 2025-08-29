@@ -5,3 +5,13 @@ const g = 9.8;
 const pi = 3.14;
 
 module.exports = { sum, mul, g, pi };
+
+
+let obj={
+    sum:sum,
+    mul:mul,
+    g:g,
+    pi:pi
+};
+
+module.exports=obj;
