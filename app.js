@@ -1,13 +1,4 @@
-const url="https://icanhazdadjoke.com/";
-
-async function name() {
-  try{
-    const config={headers:{Accept:"application/json"}};
-    let res=await axios.get(url,config);
-    console.log(res);
-  }catch(err){
-    console.log(err);
-
-  }
-  
-}
+const sum=(a,b)=> a+b;
+const mul=(a,b)=> a*b;
+const g=9.8;
+const pi=3.14;
