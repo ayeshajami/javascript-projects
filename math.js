@@ -1,6 +1,7 @@
-const sum=(a,b)=> a+b;
-const mul=(a,b)=> a*b;
-const g=9.8;
-const pi=3.14;
+// math.js
+const sum = (a, b) => a + b;
+const mul = (a, b) => a * b;
+const g = 9.8;
+const pi = 3.14;
 
-medule.exports=123;
+module.exports = { sum, mul, g, pi };
