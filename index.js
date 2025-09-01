@@ -9,10 +9,8 @@ app.listen(port,()=>{
 
 
 app.use((req,res)=>{
-    console.log(req);
+    
     console.log('server is running');
-    res.send({
-        name:"apple",
-        color:"red",
-    });
+    let code=`<h1>hello world</h1><ul><li>home</li><li>about</li><li>contact</li></ul>`;
+    res.send(code);
 });
