@@ -15,8 +15,8 @@ app.get('/:username/:id',(req,res)=>{
 });
 
 app.search('/search',(req,res)=>{
-    console.log(req.query);
-    res.send('no result');
+   let {q}=req.query;
+    res.send(`these are search results for ${q}`);
 });
 
 // app.use((req,res)=>{
