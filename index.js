@@ -14,6 +14,11 @@ app.get('/:username/:id',(req,res)=>{
   res.send('hello world i am root');
 });
 
+app.search('/search',(req,res)=>{
+    console.log(req.query);
+    res.send('no result');
+});
+
 // app.use((req,res)=>{
     
 //     console.log('server is running');
