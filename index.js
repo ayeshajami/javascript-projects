@@ -8,9 +8,19 @@ app.listen(port,()=>{
 });
 
 
-app.use((req,res)=>{
+// app.use((req,res)=>{
     
-    console.log('server is running');
-    let code=`<h1>hello world</h1><ul><li>home</li><li>about</li><li>contact</li></ul>`;
-    res.send(code);
+//     console.log('server is running');
+//     let code=`<h1>hello world</h1><ul><li>home</li><li>about</li><li>contact</li></ul>`;
+//     res.send(code);
+// });
+
+app.get('/',(req,res)=>{
+    res.send('hello world');
+});
+app.get('/apple',(req,res)=>{
+    res.send('hello apple');
+});
+app.get('/orange',(req,res)=>{
+    res.send('hello orange');
 });
