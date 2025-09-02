@@ -1,37 +1,11 @@
-const express = require('express');
-const app=express();
+const express  = require('express');
+const app = express();
+const port =8080;
+app.set("view engine","ejs");
 
-
-let port=3000;
+app.get("/",(req,res)=>{
+    res.send("this is root");
+});
 app.listen(port,()=>{
-    console.log(`server is running at ${port}`);
+    console.log(`listening on port ${port}`);
 });
-app.get('/',(req,res)=>{
-     res.send('hello  i am root');
-});
-app.get('/:username/:id',(req,res)=>{
-    console.log(req.params);
-  res.send('hello world i am root');
-});
-
-app.search('/search',(req,res)=>{
-   let {q}=req.query;
-    res.send(`these are search results for ${q}`);
-});
-
-// app.use((req,res)=>{
-    
-//     console.log('server is running');
-//     let code=`<h1>hello world</h1><ul><li>home</li><li>about</li><li>contact</li></ul>`;
-//     res.send(code);
-// });
-
-// app.get('/',(req,res)=>{
-//     res.send('hello world i am root');
-// });
-// app.get('/apple',(req,res)=>{
-//     res.send('hello apple');
-// });
-// app.get('/orange',(req,res)=>{
-//     res.send('hello orange');
-// });
