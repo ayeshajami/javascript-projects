@@ -86,7 +86,11 @@ app.get('/posts/:id/edit', (req, res) => {
     res.render('edit', { post }); 
 });
  
-
+app.delete("/posts/:id",(req,res)=>{
+const { id } = req.params;
+posts = posts.filter(p => p.id !== id); 
+res.redirect("/posts");
+});
 
 app.listen(port,()=>{
     console.log("listening to port :8080");
