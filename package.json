@@ -1,0 +1,24 @@
+{
+  "name": "java-script",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ayeshajami/javascript-projects.git"
+  },
+  "keywords": [],
+  "author": "Aisha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ayeshajami/javascript-projects/issues"
+  },
+  "homepage": "https://github.com/ayeshajami/javascript-projects#readme",
+  "description": "",
+  "dependencies": {
+    "ejs": "^3.1.10",
+    "express": "^5.1.0"
+  }
+}
