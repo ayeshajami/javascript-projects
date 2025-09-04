@@ -74,6 +74,17 @@ app.patch("/posts/:id", (req, res) => {
     res.redirect("/posts");
 });
 
+app.get("/posts/:id/edit", (req, res) => {
+    let { id } = req.params;
+    let post = posts.find(p => p.id === id);
+
+    if (!post) {
+        return res.status(404).send("Post not found");
+    }
+
+    res.render("edit.ejs", { post }); 
+});
+
 app.listen(port,()=>{
     console.log("listening to port :8080");
 });
