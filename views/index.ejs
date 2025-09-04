@@ -14,10 +14,12 @@
             <h4 class="content"> <%=post.content %> </h4>
             <br>
             <a  href="http://localhost:8080/posts/<%=post.id%>">See in detail</a>
+             <a href="http://localhost:8080/posts/<%= post.id %>/edit">Edit</a>
+
         </div>
         <%}%>
-        <br>
-        <br>
+        <br/>
+        <br/>
         <a href="http://localhost:8080/posts/new">Creat new post</a>
 </body>
 </html>

@@ -3,9 +3,10 @@ const app = express();
 const port =8080;
 const path=require("path");
 const { v4: uuidv4 } = require('uuid');
-
+const methodOverride=require("method-override");
 
 app.use(express.urlencoded({extended:true}));
+app.use(methodOverride("_method"));
 
 app.set("view engine","ejs");
 app.set("views",path.join(__dirname,"views"));
@@ -74,16 +75,18 @@ app.patch("/posts/:id", (req, res) => {
     res.redirect("/posts");
 });
 
-app.get("/posts/:id/edit", (req, res) => {
-    let { id } = req.params;
-    let post = posts.find(p => p.id === id);
+app.get('/posts/:id/edit', (req, res) => {
+    const { id } = req.params;
+    const post = posts.find(p => p.id === id); 
 
-    if (!post) {
-        return res.status(404).send("Post not found");
+    if (!post) {  clear
+        return res.send("Post not found");
     }
 
-    res.render("edit.ejs", { post }); 
+    res.render('edit', { post }); 
 });
+ 
+
 
 app.listen(port,()=>{
     console.log("listening to port :8080");
